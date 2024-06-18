@@ -53,7 +53,7 @@ require("dotenv").config();
 
       if (statusCode === 401) {
         return h.response({
-          status: "failed",
+          status: "fail",
           error: "Unauthorized",
           message: message,
           user: request.auth.credentials ? request.auth.credentials.user : null,
